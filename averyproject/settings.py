@@ -130,5 +130,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR,  'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-PAYSTACK_SECRET_KEY = 'sk_live_19efe7cdedc7b64b26c035c20ada0882a4f3b15f'
-PAYSTACK_PUBLIC_KEY = 'pk_live_9b43b17a9a97122aca29d3d638b6d0ccf3d6e2e7'
+PAYSTACK_SECRET_KEY = os.environ.get('PAYSTACK_SECRET_KEY')
+PAYSTACK_PUBLIC_KEY = os.environ.get('PAYSTACK_PUBLIC_KEY')
